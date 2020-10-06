@@ -1,0 +1,51 @@
+# -*- coding: utf-8 -*-
+======================
+ getarticle CHANGELOG
+======================
+
+07/23/2020
+Fixes
+  * Updated to v0.0.8. 
+  * CL args '-sd' name correction. 
+
+Enhancements
+  * Updated to v0.0.7.
+  * Added '-s' argument in CL to search keywords. 
+
+
+07/16/2020
+Fixes
+  * Updated to v0.0.6.
+  * `appscript` module will only be installed in MacOS. 
+
+
+07/14/2020
+Enhancements
+  * Added '-sd' argument in CL to set default download direction. 
+  * Combined two command lines into one. 
+
+Fixes
+  * Warning instead of error for duplicate article. 
+
+
+07/13/2020
+Enhancements
+  * Added new command line to download current webpage article. 
+    (Only for MacOS, Safari) 
+  * Updated to v0.0.5.
+  * Added command line interface. 
+  * Updated to v0.0.2. 
+
+Fixes
+  * v0.0.3 and v0.0.4 were crashed because of installing default packages. 
+
+
+07/12/2020
+Enhancements
+  * Added two new features: 'cur_articles' and 'remove_article' to manupulate
+    stored articles. 
+  * Downloaded articles can be named as the corresponding article title. 
+
+
+07/11/2020
+  * v0.0.1 is published. 
