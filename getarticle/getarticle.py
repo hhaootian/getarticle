@@ -137,4 +137,6 @@ class GetArticle(object):
             title = self._title_collection.pop(0)
             print(doi, title)
             article = requests.get(url, allow_redirects=True).content
-            open("%s/%s.pdf" %(direction, title), 'wb').write(article)
+            validTitle = re.sub(r'[\\/\:*"<>\|\.%\$\^&£]', '', title)
+            open("%s/%s.pdf" %(direction, validTitle), 'wb').write(article)
+

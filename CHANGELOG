@@ -3,6 +3,11 @@
  getarticle CHANGELOG
 ======================
 
+10/11/2020
+Fixes
+  *  Remove invalid filename characters. 
+
+
 10/06/2020
   * Updated to v0.0.9. 
   * Clean git history to remove large gif.  
