@@ -36,7 +36,7 @@ class GetArticle(object):
                 split('.')[0]
         except Exception as ex:
             title = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
-        except BaseException:
+        except SystemExit:
             pass
 
         if doi not in self._doi_collection:
@@ -131,7 +131,7 @@ class GetArticle(object):
                     "rb").read().decode()
             except Exception as ex:
                 direction = '.'
-            except BaseException:
+            except SystemExit:
                 pass
 
         print("Downloading %d papers" %len(self._url_collection))
