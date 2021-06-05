@@ -142,5 +142,5 @@ class GetArticle(object):
             print(doi, title)
             article = requests.get(url, allow_redirects=True).content
             validTitle = re.sub(r'[\\/\:*"<>\|\.%\$\^&£]', '', title)
-             open("%s/%s.pdf" %(direction, validTitle), 'wb').write(article)
+            open("%s/%s.pdf" %(direction, validTitle), 'wb').write(article)
 
