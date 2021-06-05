@@ -3,9 +3,14 @@
  getarticle CHANGELOG
 ======================
 
+06/05/2021
+Fixes
+  * Handle Exception properly.
+
+
 10/11/2020
 Fixes
-  *  Remove invalid filename characters. 
+  * Remove invalid filename characters. 
 
 
 10/06/2020
