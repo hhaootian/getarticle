@@ -1,4 +1,4 @@
-# getarticle [![Python](https://img.shields.io/badge/Python-3%2B-blue.svg)](https://www.python.org) [![PyPI](https://img.shields.io/pypi/v/getarticle.svg)](https://pypi.org/project/getarticle/) [![pypi downloads](https://pepy.tech/badge/getarticle)](https://pypi.org/project/getarticle)
+# getarticle [![Python](https://img.shields.io/badge/Python-3%2B-blue.svg)](https://www.python.org)[![LGTM](https://img.shields.io/lgtm/grade/python/github/HTian1997/getarticle.svg?style=square)](https://lgtm.com/projects/g/nschloe/krylov) [![PyPI](https://img.shields.io/pypi/v/getarticle.svg)](https://pypi.org/project/getarticle/) [![pypi downloads](https://pepy.tech/badge/getarticle)](https://pypi.org/project/getarticle)
 
 ## Description 
 
