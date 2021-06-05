@@ -34,9 +34,11 @@ class GetArticle(object):
         try:
             title = web_content.split("\"clip(this)\">")[1].split("<i>")[1].\
                 split('.')[0]
-        except:
+        except Exception as ex:
             title = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
-        
+        except SystemExit:
+            pass
+
         if doi not in self._doi_collection:
             self._doi_collection.append(doi)
             self._title_collection.append(title)
@@ -127,8 +129,10 @@ class GetArticle(object):
             try:
                 direction = open("%s/.getarticle.ini" %expanduser("~"), \
                     "rb").read().decode()
-            except:
+            except Exception as ex:
                 direction = '.'
+            except SystemExit:
+                pass
 
         print("Downloading %d papers" %len(self._url_collection))
         while self._url_collection:
