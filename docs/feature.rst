@@ -5,6 +5,9 @@ Feature
 
 ``getarticle`` can be imported in Python or used as command line.
 
+Command line
+------------
+
 .. code-block:: bash 
 
   usage: getarticle [-h] [-i INPUT] [-o OUTPUT] [-sd SETDOWNLOAD]
@@ -53,3 +56,25 @@ Example:
   # download article of current webpage to default direction
   getarticle
 
+Python module
+--------------
+
+0. Initialization
+
+.. code-block:: python
+
+  from getarticle import GetArticle
+  ga = GetArticle()
+
+1. Download a single article given DOI or website address.
+
+.. code-block:: python
+
+  ga.input_article("10.1126/science.abc7424")
+  ga.download()
+
+Notes:
+
+- Once downloaded, all stored articles will be cleared;
+- For download function, direction argument is the current direction by default;
+- Downloaded article is named as either "article title.pdf" if successfull or "year-month-day-hour-minute-second.pdf".
